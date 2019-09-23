@@ -1,0 +1,5 @@
+# The default gateway permits to a device in a given network
+# to communicate with devices being in another network.
+# This is an intermediate between the device and the internet.
+
+route get default | grep getway | rev -f 1 -d ' ' | rev
