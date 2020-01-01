@@ -1,0 +1,4 @@
+Le fichier qui contient les clefs RSA (publiques) des machines autorisées à se connecter via SSH sur le serveur est : `~/.ssh/authorized_keys`.
+Le fichier `~/.ssh/authorized_keys2` peut être, par défaut, également utilisé.
+
+L'emplacement de ce(s) fichier(s) peut être configuré grâce à la propriété `AuthorizedKeysFile` du fichier `/etc/ssh/sshd_config`.
