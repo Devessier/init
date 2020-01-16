@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Kill all sessions for $1 user.
+pkill -KILL -u $1
+
+# Now that all the sessions have been killed, delete the user.
+userdel -rf $1

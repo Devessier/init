@@ -1,0 +1,3 @@
+C'est le service `cron` qui permet de lancer des tâches à horaires réguliers.
+
+On peut le lancer via la commande `/etc/init.d/cron start`.

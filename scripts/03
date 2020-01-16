@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# This script gives the versions of some interesting languages available on this session.
+
+ESC="\e["
+RESET_COLOR="${ESC}0m"
+
+NODE_COLOR="${ESC}38;5;40m"
+GO_COLOR="${ESC}38;5;87m"
+GCC_COLOR="${ESC}38;5;160m"
+
+if type node > /dev/null; then
+	echo -en "${NODE_COLOR}Node.js${RESET_COLOR} version is: "
+	node --version
+else
+	echo "Node.js couldn't be find"
+fi
+
+if type go > /dev/null; then
+	echo -en "${GO_COLOR}Golang${RESET_COLOR} version is: "
+	go version | cut -d ' ' -f 3-
+else
+	echo "Golang couldn't be find"
+fi
+
+if type gcc > /dev/null; then
+	echo -en "${GCC_COLOR}GCC${RESET_COLOR} version is: "
+	gcc --version | head -n 1
+else
+	echo "GCC couldn't be find"
+fi
