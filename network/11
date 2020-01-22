@@ -1,7 +1,7 @@
 Les trois premieres lignes de `traceroute slash16.org` donnent :
 
-- L'adresse locale (10.11.254.254)
-- Le NAT (nat-1, 10.60.1.11)
+- Gateway par defaut pour sortir du reseau prive (10.11.254.254)
+- Le NAT = mapping IP publique / IP privee (nat-1, 10.60.1.11)
 - L'IP publique de slash16.org (dc3, 62.210.35.1)
 
 Le NAT permet de sortir du reseau prive pour aller sur le reseau public.

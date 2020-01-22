@@ -2,4 +2,4 @@
 # to communicate with devices being in another network.
 # This is an intermediate between the device and the internet.
 
-route get default | grep gateway | rev | cut -f 1 -d ' ' | rev
+route get default | grep gateway | awk '{print $2}'
