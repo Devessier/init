@@ -1,1 +1,1 @@
-ssh init@localhost
+ssh <nom d'utilisateur>@localhost

@@ -1,1 +1,1 @@
-dpkg-query -l | cut -d ' ' -f 3
+dpkg-query -l | awk '{print $2}'
