@@ -1,2 +1,5 @@
 Avec un `whois` de slash16.org, on remarque qu'au niveau des champs "Name Server" on trouve des noms de domaines AWS.
 Le site de slash16 est donc heberge sur AWS (Amazon).
+
+La commande a taper est :
+`whois slash16.org | grep 'Name Server' | cut -d ' ' -f 3 | grep aws`

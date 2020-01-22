@@ -1,3 +1,1 @@
-# the dig command permits to get DNS entries for a given domain name ! :tada:
-
-dig slash16.org | grep SERVER  | rev | cut -d \( -f1 | cut -d \) -f2
+nslookup slash16.org | grep Server | cut -d : -f 2 | sed -e 's/^[[:space:]]*//'
