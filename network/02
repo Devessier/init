@@ -1,1 +1,7 @@
+# 02a
+
 ifconfig en0 | tail -n 4 | head -n 1 | rev | cut -f1 -d ' '| rev
+
+# 02b
+
+arp -a
