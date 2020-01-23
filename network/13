@@ -1,2 +1,2 @@
 # nslookup $(./12) | grep name | awk '{print $4}'
-e1r3p13.42.fr.
+e2r3p13.42.fr.
