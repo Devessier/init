@@ -13,19 +13,19 @@ if type node > /dev/null; then
 	echo -en "${NODE_COLOR}Node.js${RESET_COLOR} version is: "
 	node --version
 else
-	echo "Node.js couldn't be find"
+	echo -en "${NODE_COLOR}Node.js${RESET_COLOR} couldn't be find"
 fi
 
 if type go > /dev/null; then
 	echo -en "${GO_COLOR}Golang${RESET_COLOR} version is: "
 	go version | cut -d ' ' -f 3-
 else
-	echo "Golang couldn't be find"
+	echo -en "${GO_COLOR}Golang${RESET_COLOR} couldn't be find"
 fi
 
 if type gcc > /dev/null; then
 	echo -en "${GCC_COLOR}GCC${RESET_COLOR} version is: "
 	gcc --version | head -n 1
 else
-	echo "GCC couldn't be find"
+	echo -en "${GCC_COLOR}GCC${RESET_COLOR} couldn't be find"
 fi

@@ -1,3 +1,5 @@
 Pour se connecter au nouvel utilisateur :
 	- en mode graphique : quitter la session courrante et se connecter avec le nom d'utilisateur <username>
 	- en ssh : `ssh <username>@localhost`
+
+Dans les deux cas il faudra preciser le mot de passe du nouveau compte.
