@@ -10,22 +10,22 @@ GO_COLOR="${ESC}38;5;87m"
 GCC_COLOR="${ESC}38;5;160m"
 
 if type node > /dev/null; then
-	echo -en "${NODE_COLOR}Node.js${RESET_COLOR} version is: "
+	echo "${NODE_COLOR}Node.js${RESET_COLOR} version is: "
 	node --version
 else
-	echo -en "${NODE_COLOR}Node.js${RESET_COLOR} couldn't be find"
+	echo "${NODE_COLOR}Node.js${RESET_COLOR} couldn't be find"
 fi
 
 if type go > /dev/null; then
-	echo -en "${GO_COLOR}Golang${RESET_COLOR} version is: "
+	echo "${GO_COLOR}Golang${RESET_COLOR} version is: "
 	go version | cut -d ' ' -f 3-
 else
-	echo -en "${GO_COLOR}Golang${RESET_COLOR} couldn't be find"
+	echo "${GO_COLOR}Golang${RESET_COLOR} couldn't be find"
 fi
 
 if type gcc > /dev/null; then
-	echo -en "${GCC_COLOR}GCC${RESET_COLOR} version is: "
+	echo "${GCC_COLOR}GCC${RESET_COLOR} version is: "
 	gcc --version | head -n 1
 else
-	echo -en "${GCC_COLOR}GCC${RESET_COLOR} couldn't be find"
+	echo "${GCC_COLOR}GCC${RESET_COLOR} couldn't be find"
 fi
