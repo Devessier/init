@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # Kill all sessions for $1 user.
 pkill -KILL -u $1
