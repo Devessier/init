@@ -1,1 +1,1 @@
-pidof sshd
+systemctl status sshd | grep PID | awk '{ print $3 }'

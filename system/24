@@ -1,1 +1,1 @@
-dpkg-query -l | awk '{print $2}'
+apt list --installed

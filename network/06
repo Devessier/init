@@ -1,1 +1,5 @@
 /etc/resolv.conf
+
+# OU
+# /var/run/resolv.conf
+# CAR `ls -l /etc/resolv.conf` -> `/var/run/resolv.conf`

@@ -3,10 +3,18 @@
 Sortie a titre d'exemple :
 
 ```
+anacron
 apparmor
 autovt@
+avahi-daemon
+bluetooth
 console-setup
 cron
+cups-browsed
+cups
+dbus-fi.w1.wpa_supplicant1
+dbus-org.bluez
+dbus-org.freedesktop.Avahi
 dbus-org.freedesktop.timesync1
 getty@
 keyboard-setup
@@ -17,6 +25,7 @@ sshd
 syslog
 systemd-fsck-root
 systemd-timesyncd
+wpa_supplicant
 ```
 
-Ces services sont appeles `daemons`
+Ces services sont appelés `daemons`

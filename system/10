@@ -1,1 +1,3 @@
-fdisk -l
+lsblk
+
+# or we can install fdisk and use it like this : `fdisk -l`
